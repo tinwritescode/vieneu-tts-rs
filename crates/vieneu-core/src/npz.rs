@@ -38,11 +38,9 @@ fn parse_npy(bytes: &[u8]) -> Result<Array> {
     let body = &bytes[start + len..];
     let descr = header_value(header, "'descr'")?;
     let data = if descr.starts_with("<f4") {
-        body.chunks_exact(4).map(|b| f32::from_le_bytes(b.try_into().expect("chunk of 4"))).collect()
+        body.as_chunks::<4>().0.iter().map(|b| f32::from_le_bytes(*b)).collect()
     } else if descr.starts_with("<f8") {
-        body.chunks_exact(8)
-            .map(|b| f64::from_le_bytes(b.try_into().expect("chunk of 8")) as f32)
-            .collect()
+        body.as_chunks::<8>().0.iter().map(|b| f64::from_le_bytes(*b) as f32).collect()
     } else {
         bail!("unsupported npy dtype: {descr}");
     };

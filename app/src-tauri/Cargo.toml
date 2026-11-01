@@ -1,0 +1,17 @@
+[package]
+name = "vieneu-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+vieneu-core.workspace = true
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+rodio = { version = "0.20", default-features = false, features = ["wav"] }

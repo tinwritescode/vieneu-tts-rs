@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VieNeuTTS</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">V</span><div><strong>VieNeuTTS</strong><small>v3 Turbo</small></div></div>
+      <nav>
+        <button class="nav" data-view="create" data-i18n="navCreate"></button>
+        <button class="nav" data-view="voices" data-i18n="navVoices"></button>
+      </nav>
+      <button class="nav settings" data-view="settings" data-i18n="navSettings"></button>
+    </aside>
+
+    <main>
+      <section id="view-create" class="view">
+        <header>
+          <h1 data-i18n="navCreate"></h1>
+          <button id="import" class="ghost" data-i18n="importFile"></button>
+        </header>
+        <div class="columns">
+          <div class="card editor">
+            <div class="cues">
+              <span data-i18n="cues"></span>
+              <button class="chip" data-cue="[cười]" data-i18n="cueLaugh"></button>
+              <button class="chip" data-cue="[thở dài]" data-i18n="cueSigh"></button>
+              <button class="chip" data-cue="[hắng giọng]" data-i18n="cueThroat"></button>
+            </div>
+            <textarea id="text" spellcheck="false" data-i18n-placeholder="textPlaceholder"></textarea>
+            <div class="counts">
+              <span id="counts"></span>
+              <button id="clear" class="link" data-i18n="clear"></button>
+            </div>
+          </div>
+          <div class="inspector">
+            <div class="card">
+              <h2 data-i18n="voice"></h2>
+              <div class="voice-pick"><span id="avatar" class="avatar"></span><div><strong id="voice-name"></strong><small id="voice-meta"></small></div></div>
+              <div class="row">
+                <button id="audition" class="ghost" data-i18n="listen"></button>
+                <button data-view="voices" class="ghost" data-i18n="changeVoice"></button>
+              </div>
+              <div id="recent" class="recent"></div>
+            </div>
+            <div class="card">
+              <h2 data-i18n="thisTake"></h2>
+              <label><span data-i18n="speed"></span><output id="speed-out"></output>
+                <input id="speed" type="range" min="0.5" max="2" step="0.05" /></label>
+              <label><span data-i18n="pause"></span><output id="pause-out"></output>
+                <input id="pause" type="range" min="0" max="2" step="0.05" /></label>
+              <label class="toggle"><span data-i18n="live"></span><input id="live" type="checkbox" /></label>
+            </div>
+          </div>
+        </div>
+        <div class="card dock">
+          <button id="generate" class="primary" data-i18n="generate"></button>
+          <button id="play" class="ghost" data-i18n="play"></button>
+          <button id="stop" class="ghost" data-i18n="stop"></button>
+          <button id="export" class="ghost" data-i18n="exportWav"></button>
+          <canvas id="wave" height="48"></canvas>
+          <span id="clock">0:00 / 0:00</span>
+        </div>
+      </section>
+
+      <section id="view-voices" class="view">
+        <header><h1 data-i18n="navVoices"></h1></header>
+        <div class="card clone">
+          <h2 data-i18n="cloneTitle"></h2>
+          <p data-i18n="cloneHelp"></p>
+          <div class="row">
+            <input id="clone-name" type="text" data-i18n-placeholder="cloneName" />
+            <button id="clone-clip" class="ghost" data-i18n="chooseClip"></button>
+            <label class="toggle"><span data-i18n="denoise"></span><input id="clone-denoise" type="checkbox" checked /></label>
+            <button id="clone-go" class="primary" data-i18n="cloneGo"></button>
+          </div>
+          <small id="clone-file"></small>
+        </div>
+        <div class="filters">
+          <input id="search" type="search" data-i18n-placeholder="search" />
+          <select id="region"></select>
+          <select id="gender"></select>
+        </div>
+        <div id="voice-grid" class="grid"></div>
+      </section>
+
+      <section id="view-settings" class="view">
+        <header><h1 data-i18n="navSettings"></h1></header>
+        <div class="card form">
+          <label><span data-i18n="language"></span>
+            <select id="language"><option value="vi">Tiếng Việt</option><option value="en">English</option></select></label>
+          <label><span data-i18n="threads"></span><input id="threads" type="number" min="1" max="32" /></label>
+          <p data-i18n="threadsHelp"></p>
+        </div>
+      </section>
+      <footer><span id="status"></span><span id="version"></span></footer>
+    </main>
+
+    <div id="setup" class="overlay" hidden>
+      <div class="card">
+        <h2 data-i18n="setupTitle"></h2>
+        <p id="setup-text"></p>
+        <progress id="setup-progress" max="1" value="0"></progress>
+        <button id="setup-go" class="primary" data-i18n="setupGo"></button>
+      </div>
+    </div>
+  </body>
+</html>
