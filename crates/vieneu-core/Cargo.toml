@@ -17,4 +17,7 @@ regex = "1"
 fastrand = "2"
 hound = "3.5"
 realfft = "3.5"
-rubato = "0.16"
+symphonia = { version = "0.5", default-features = false, features = ["wav", "pcm", "mp3", "flac", "ogg", "vorbis", "isomp4", "aac"] }
+sha2 = "0.10"
+ureq = "2"
+pdf-extract = "0.10"

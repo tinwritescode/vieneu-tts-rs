@@ -25,6 +25,7 @@ use crate::voice::Voice;
 
 pub const SAMPLE_RATE: u32 = 48_000;
 const STREAM_LEADIN_FRAMES: usize = 4;
+const WHOLE_GROUP_FRAMES: usize = 6;
 
 #[derive(Deserialize)]
 struct Config {
@@ -45,7 +46,8 @@ struct Config {
 /// How generated frames are grouped into decoded audio.
 #[derive(Clone, Copy, Debug)]
 pub enum Pacing {
-    /// Decode once, after the last frame.
+    /// Decode in small fixed groups. The codec's peak memory grows with group
+    /// size (2.3 GB for whole chunks, 626 MB at this size) and its output does not.
     Whole,
     /// Decode small groups, growing as playback lead builds up.
     Adaptive { max_frames: usize },
@@ -53,7 +55,7 @@ pub enum Pacing {
 
 impl Pacing {
     fn target(self, lead_seconds: Option<f32>) -> usize {
-        let Pacing::Adaptive { max_frames } = self else { return usize::MAX };
+        let Pacing::Adaptive { max_frames } = self else { return WHOLE_GROUP_FRAMES };
         let cap = max_frames.max(1);
         let wanted = match lead_seconds {
             Some(lead) if lead >= 1.10 => cap,
@@ -162,7 +164,8 @@ static ENVIRONMENT: LazyLock<Result<ort::environment::Environment, String>> =
 pub(crate) fn session(path: &Path, threads: usize) -> Result<Session> {
     let environment = ENVIRONMENT.as_ref().map_err(|e| anyhow!("onnx runtime: {e}"))?;
     let open = || -> ort::Result<Session> {
-        // On macOS the default policy registers CoreML, which rejects the
+        // Arena off: it saves little here and is what grew to 2.5 GB in the
+        // Python app on long texts. On macOS the default policy registers CoreML, which rejects the
         // acoustic graph's empty KV cache.
         Session::builder(environment)?
             .with_auto_device(AutoDevicePolicy::PreferCPU)?
