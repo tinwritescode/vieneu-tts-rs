@@ -1,0 +1,228 @@
+[
+ {
+  "text": "Xin chào các bạn [cười], hôm nay là 12/3/2024.",
+  "max_chars": 256,
+  "chunks": [
+   "xin chào các bạn <|emotion_1|> hôm nay là ngày mười hai tháng ba năm hai nghìn không trăm hai mươi bốn."
+  ],
+  "gaps": [],
+  "phonemes": [
+   "sˈin tʃˈaː2w kˌaːɜc bˈaː6n <|emotion_1|> hˈom nˈaj lˌaː2 ŋˈa2j mˈyə2j hˈaːj tˈaːɜŋ bˈaː nˈam hˈaːj ŋˈi2n xˌoŋ tʃˈam hˈaːj mˈyəj bˈoɜn."
+  ],
+  "frame_caps": [
+   266
+  ]
+ },
+ {
+  "text": "Xin chào các bạn [cười], hôm nay là 12/3/2024.",
+  "max_chars": 60,
+  "chunks": [
+   "xin chào các bạn <|emotion_1|> hôm nay là ngày mười hai.",
+   "tháng ba năm hai nghìn không trăm hai mươi bốn."
+  ],
+  "gaps": [
+   "sentence"
+  ],
+  "phonemes": [
+   "sˈin tʃˈaː2w kˌaːɜc bˈaː6n <|emotion_1|> hˈom nˈaj lˌaː2 ŋˈa2j mˈyə2j hˈaːj.",
+   "tˈaːɜŋ bˈaː nˈam hˈaːj ŋˈi2n xˌoŋ tʃˈam hˈaːj mˈyəj bˈoɜn."
+  ],
+  "frame_caps": [
+   150,
+   140
+  ]
+ },
+ {
+  "text": "Có phải ... kiểu như: \"Rồi sao nữa? Mình phải làm đến bao giờ?\", đúng không anh? Thế à!",
+  "max_chars": 256,
+  "chunks": [
+   "có phải, kiểu như, rồi sao nữa? mình phải làm đến bao giờ? đúng không anh? thế à!"
+  ],
+  "gaps": [],
+  "phonemes": [
+   "kˈɔɜ fˌaː4j, kˈiɛ4w ɲˌy, ɹˈo2j sˈaːw nˈyə5? mˈi2ɲ fˌaː4j lˈaː2m ɗˌeɜn bˈaːw zˈəː2? ɗˈuɜŋ xˌoŋ ˈe-ɲ? tˈeɜ ˈaː2!"
+  ],
+  "frame_caps": [
+   244
+  ]
+ },
+ {
+  "text": "Có phải ... kiểu như: \"Rồi sao nữa? Mình phải làm đến bao giờ?\", đúng không anh? Thế à!",
+  "max_chars": 60,
+  "chunks": [
+   "có phải. kiểu như. rồi sao nữa? mình phải làm đến bao giờ? đúng không anh? thế à."
+  ],
+  "gaps": [],
+  "phonemes": [
+   "kˈɔɜ fˌaː4j, kˈiɛ4w ɲˌy, ɹˈo2j sˈaːw nˈyə5? mˈi2ɲ fˌaː4j lˈaː2m ɗˌeɜn bˈaːw zˈəː2? ɗˈuɜŋ xˌoŋ ˈe-ɲ? tˈeɜ ˈaː2."
+  ],
+  "frame_caps": [
+   244
+  ]
+ },
+ {
+  "text": "Chương một.\nNgày xửa ngày xưa, ở một ngôi làng nhỏ ven sông, có một cậu bé tên là An. Cậu rất thích đọc sách và thường ngồi dưới gốc cây đa đầu làng mỗi buổi chiều [thở dài]. Giá vàng hôm nay tăng 3.5 triệu đồng mỗi lượng, tương đương 2,5%.\n\nHết.",
+  "max_chars": 256,
+  "chunks": [
+   "chương một. ngày xửa ngày xưa, ở một ngôi làng nhỏ ven sông, có một cậu bé tên là an. cậu rất thích đọc sách và thường ngồi dưới gốc cây đa đầu làng mỗi buổi chiều <|emotion_2|> .",
+   "giá vàng hôm nay tăng ba chấm năm triệu đồng mỗi lượng, tương đương hai phẩy năm phần trăm. hết."
+  ],
+  "gaps": [
+   "sentence"
+  ],
+  "phonemes": [
+   "tʃˈyəŋ mˈo6t̪, ŋˈa2j sˈyə4 ŋˈa2j sˈyə, ˈəː4 mˈo6t̪ ŋˈoj lˈaː2ŋ ɲˈɔ4 vˈɛn sˈoŋ, kˈɔɜ mˈo6t̪ kˈə6w bˈɛɜ t̪ˈen lˌaː2 ˈaːn. kˈə6w ɹˈəɜt̪ tˈiɜc ɗˈɔ6k sˈe-ɜc vˌaː2 tˈyə2ŋ ŋˈo2j zˈyəɜj ɣˈoɜk kˈəɪ ɗˈaː ɗˈə2w lˈaː2ŋ mˌo5j bˈuə4j tʃˈiɛ2w <|emotion_2|>.",
+   "zˈaːɜ vˈaː2ŋ hˈom nˈaj t̪ˈaŋ bˈaː tʃˈəɜm nˈam tʃˈiɛ6w ɗˈo2ŋ mˌo5j lˈyə6ŋ, t̪ˈyəŋ ɗˈyəŋ hˈaːj fˈəɪ4 nˈam fˈə2n tʃˈam. hˈeɜt̪."
+  ],
+  "frame_caps": [
+   482,
+   272
+  ]
+ },
+ {
+  "text": "Chương một.\nNgày xửa ngày xưa, ở một ngôi làng nhỏ ven sông, có một cậu bé tên là An. Cậu rất thích đọc sách và thường ngồi dưới gốc cây đa đầu làng mỗi buổi chiều [thở dài]. Giá vàng hôm nay tăng 3.5 triệu đồng mỗi lượng, tương đương 2,5%.\n\nHết.",
+  "max_chars": 60,
+  "chunks": [
+   "chương một. ngày xửa ngày xưa, ở một ngôi làng nhỏ ven sông,",
+   "có một cậu bé tên là an.",
+   "cậu rất thích đọc sách và thường ngồi dưới gốc cây đa đầu.",
+   "làng mỗi buổi chiều <|emotion_2|> .",
+   "giá vàng hôm nay tăng ba chấm năm triệu đồng mỗi lượng,",
+   "tương đương hai phẩy năm phần trăm. hết."
+  ],
+  "gaps": [
+   "minor",
+   "sentence",
+   "sentence",
+   "sentence",
+   "minor"
+  ],
+  "phonemes": [
+   "tʃˈyəŋ mˈo6t̪, ŋˈa2j sˈyə4 ŋˈa2j sˈyə, ˈəː4 mˈo6t̪ ŋˈoj lˈaː2ŋ ɲˈɔ4 vˈɛn sˈoŋ.",
+   "kˈɔɜ mˈo6t̪ kˈə6w bˈɛɜ t̪ˈen lˌaː2 ˈaːn.",
+   "kˈə6w ɹˈəɜt̪ tˈiɜc ɗˈɔ6k sˈe-ɜc vˌaː2 tˈyə2ŋ ŋˈo2j zˈyəɜj ɣˈoɜk kˈəɪ ɗˈaː ɗˈə2w.",
+   "lˈaː2ŋ mˌo5j bˈuə4j tʃˈiɛ2w <|emotion_2|>.",
+   "zˈaːɜ vˈaː2ŋ hˈom nˈaj t̪ˈaŋ bˈaː tʃˈəɜm nˈam tʃˈiɛ6w ɗˈo2ŋ mˌo5j lˈyə6ŋ.",
+   "t̪ˈyəŋ ɗˈyəŋ hˈaːj fˈəɪ4 nˈam fˈə2n tʃˈam. hˈeɜt̪."
+  ],
+  "frame_caps": [
+   180,
+   104,
+   184,
+   82,
+   170,
+   124
+  ]
+ },
+ {
+  "text": "Tôi dùng iPhone 15 Pro Max và laptop MacBook để làm việc với Python và Rust mỗi ngày.",
+  "max_chars": 256,
+  "chunks": [
+   "tôi dùng i phone mười lăm pro max và laptop mac book để làm việc với python và rust mỗi ngày."
+  ],
+  "gaps": [],
+  "phonemes": [
+   "t̪ˈoj zˈu2ŋ ˈaɪ fˈoʊn mˈyə2j lˈam pɹˈoʊ mˈæks vˌaː2 lˈæptɑːp mˈæk bˈʊk ɗˌe4 lˈaː2m vˈiɛ6c vˌəːɜj pˈaɪθən vˌaː2 ɹˈʌst mˌo5j ŋˈa2j."
+  ],
+  "frame_caps": [
+   282
+  ]
+ },
+ {
+  "text": "Tôi dùng iPhone 15 Pro Max và laptop MacBook để làm việc với Python và Rust mỗi ngày.",
+  "max_chars": 60,
+  "chunks": [
+   "tôi dùng i phone mười lăm pro max và laptop mac book.",
+   "để làm việc với python và rust mỗi ngày."
+  ],
+  "gaps": [
+   "sentence"
+  ],
+  "phonemes": [
+   "t̪ˈoj zˈu2ŋ ˈaɪ fˈoʊn mˈyə2j lˈam pɹˈoʊ mˈæks vˌaː2 lˈæptɑːp mˈæk bˈʊk.",
+   "ɗˌe4 lˈaː2m vˈiɛ6c vˌəːɜj pˈaɪθən vˌaː2 ɹˈʌst mˌo5j ŋˈa2j."
+  ],
+  "frame_caps": [
+   166,
+   140
+  ]
+ },
+ {
+  "text": "Chào.",
+  "max_chars": 256,
+  "chunks": [
+   "chào."
+  ],
+  "gaps": [],
+  "phonemes": [
+   "tʃˈaː2w."
+  ],
+  "frame_caps": [
+   13
+  ]
+ },
+ {
+  "text": "Chào.",
+  "max_chars": 60,
+  "chunks": [
+   "chào."
+  ],
+  "gaps": [],
+  "phonemes": [
+   "tʃˈaː2w."
+  ],
+  "frame_caps": [
+   13
+  ]
+ },
+ {
+  "text": "Một câu rất dài không có dấu ngắt nào để bám vào và nó cứ kéo dài mãi mãi cho đến khi người đọc cảm thấy mệt mỏi nhưng vẫn phải tiếp tục đọc vì nếu dừng lại thì sẽ không hiểu được ý nghĩa của toàn bộ đoạn văn này sau khi đã đọc xong phần mở đầu rất dài dòng",
+  "max_chars": 256,
+  "chunks": [
+   "một câu rất dài không có dấu ngắt nào để bám vào và nó cứ kéo dài mãi mãi cho đến khi người đọc cảm thấy mệt mỏi nhưng vẫn phải tiếp tục đọc vì nếu dừng lại thì sẽ không hiểu được ý nghĩa của toàn bộ đoạn văn này.",
+   "sau khi đã đọc xong phần mở đầu rất dài dòng."
+  ],
+  "gaps": [
+   "sentence"
+  ],
+  "phonemes": [
+   "mˈo6t̪ kˈə1w ɹˈəɜt̪ zˈaː2j xˌoŋ kˈɔɜ zˈəɜw ŋˈaɜt̪ nˈaː2w ɗˌe4 bˈaːɜm vˈaː2w vˌaː2 nˈɔɜ kˈyɜ kˈɛɜw zˈaː2j mˈaː5j mˈaː5j tʃˌɔ ɗˌeɜn xˌi ŋˈyə2j ɗˈɔ6k kˈaː4m tˈəɪɜ mˈe6t̪ mˈɔ4j ɲˌyŋ vˌə5n fˌaː4j t̪ˈiɛɜp t̪ˈu6c ɗˈɔ6k vˌi2 nˌeɜw zˈy2ŋ lˈaː6j tˌi2 sˌɛ5 xˌoŋ hˈiɛ4w ɗˌyə6c ˈiɜ ŋˈiə5 kˌuə4 t̪wˈaː2n bˈo6 ɗwˈaː6n vˈan nˈa2j.",
+   "sˈaw xˌi ɗˌaː5 ɗˈɔ6k sˈɔŋ fˈə2n mˈəː4 ɗˈə2w ɹˈəɜt̪ zˈaː2j zˈɔ2ŋ."
+  ],
+  "frame_caps": [
+   652,
+   152
+  ]
+ },
+ {
+  "text": "Một câu rất dài không có dấu ngắt nào để bám vào và nó cứ kéo dài mãi mãi cho đến khi người đọc cảm thấy mệt mỏi nhưng vẫn phải tiếp tục đọc vì nếu dừng lại thì sẽ không hiểu được ý nghĩa của toàn bộ đoạn văn này sau khi đã đọc xong phần mở đầu rất dài dòng",
+  "max_chars": 60,
+  "chunks": [
+   "một câu rất dài không có dấu ngắt nào để bám vào.",
+   "và nó cứ kéo dài mãi mãi cho đến khi người đọc cảm thấy mệt.",
+   "mỏi nhưng vẫn phải tiếp tục đọc.",
+   "vì nếu dừng lại thì sẽ không hiểu được ý nghĩa của toàn bộ.",
+   "đoạn văn này sau khi đã đọc xong phần mở đầu rất dài dòng."
+  ],
+  "gaps": [
+   "sentence",
+   "sentence",
+   "sentence",
+   "sentence"
+  ],
+  "phonemes": [
+   "mˈo6t̪ kˈə1w ɹˈəɜt̪ zˈaː2j xˌoŋ kˈɔɜ zˈəɜw ŋˈaɜt̪ nˈaː2w ɗˌe4 bˈaːɜm vˈaː2w.",
+   "vˌaː2 nˈɔɜ kˈyɜ kˈɛɜw zˈaː2j mˈaː5j mˈaː5j tʃˌɔ ɗˌeɜn xˌi ŋˈyə2j ɗˈɔ6k kˈaː4m tˈəɪɜ mˈe6t̪.",
+   "mˈɔ4j ɲˌyŋ vˌə5n fˌaː4j t̪ˈiɛɜp t̪ˈu6c ɗˈɔ6k.",
+   "vˌi2 nˌeɜw zˈy2ŋ lˈaː6j tˌi2 sˌɛ5 xˌoŋ hˈiɛ4w ɗˌyə6c ˈiɜ ŋˈiə5 kˌuə4 t̪wˈaː2n bˈo6.",
+   "ɗwˈaː6n vˈan nˈa2j sˈaw xˌi ɗˌaː5 ɗˈɔ6k sˈɔŋ fˈə2n mˈəː4 ɗˈə2w ɹˈəɜt̪ zˈaː2j zˈɔ2ŋ."
+  ],
+  "frame_caps": [
+   176,
+   206,
+   114,
+   190,
+   190
+  ]
+ }
+]

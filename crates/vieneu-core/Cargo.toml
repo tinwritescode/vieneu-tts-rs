@@ -1,0 +1,20 @@
+[package]
+name = "vieneu-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sea-g2p-rs = { git = "https://github.com/pnnbao97/sea-g2p", rev = "e825173f235d08ea19315b2b279fb11153b44cea", default-features = false }
+ort = { version = "=2.0.0-rc.15" }
+tokenizers = { version = "0.22", default-features = false, features = ["onig"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+regex = "1"
+fastrand = "2"
+hound = "3.5"
+realfft = "3.5"
+rubato = "0.16"
