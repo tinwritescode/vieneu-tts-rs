@@ -25,7 +25,7 @@ export function filterVoices(voices: readonly VoiceInfo[], filter: VoiceFilter):
     (voice) =>
       (filter.region === "" || voice.region === filter.region) &&
       (filter.gender === "" || voice.gender === filter.gender) &&
-      fold(`${voice.name} ${voice.description ?? ""}`).includes(query),
+      fold(`${voice.name} ${voice.description}`).includes(query),
   );
 }
 

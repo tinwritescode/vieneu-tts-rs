@@ -38,6 +38,11 @@ describe("text helpers", () => {
     expect(names("thu", "Nam", "")).toEqual([]);
   });
 
+  it("searches descriptions too", () => {
+    const voices = [{ ...voice("An", "Bắc", "Nam"), description: "Đọc truyện" }];
+    expect(filterVoices(voices, { query: "doc truyen", region: "", gender: "" })).toHaveLength(1);
+  });
+
   it("moves a voice to the front of recents without repeats, capped", () => {
     const recent = ["a", "b", "c", "d"].map(id);
     expect(remember(recent, id("c"))).toEqual(["c", "a", "b", "d"].map(id));
