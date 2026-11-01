@@ -1,0 +1,13 @@
+VieNeuTTS Rust
+
+A Rust rewrite of VieNeuTTSApp (https://github.com/NguyenSiTrung/VieNeuTTSApp),
+both licensed under the Apache License 2.0.
+
+This repository includes material from those projects:
+- crates/vieneu-core/assets/voices_v3_turbo.json and
+  crates/vieneu-core/tests/fixtures/ref.wav, from the vieneu 3.3.0 package.
+- app/src-tauri/icons, generated from the VieNeuTTSApp icon.
+
+Model files are not in this repository. They are downloaded on first use from
+pnnbao-ump/VieNeu-TTS-v3-Turbo and OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX
+on Hugging Face under their own licenses.
